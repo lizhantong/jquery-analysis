@@ -1,2 +1,2 @@
 # jquery-analysis
-说明
+说明文件
