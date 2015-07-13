@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../src/sizzle.js"></script>
+    <script>
+        window.onload = function () {
+            var tkBox = Sizzle.tokenize('div > p + div.lzt input[type="checkbox"], div > p');
+            console.log(tkBox);
+        }
+    </script>
+</head>
+<body>
+<div id="text">
+    <p>
+        <input type="text" />
+    </p>
+    <div class="lzt">
+        <input type="checkbox" name="readme" />
+        <p>Sizzle</p>
+    </div>
+</div>
+</body>
+</html>

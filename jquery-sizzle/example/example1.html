@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../src/sizzle.js"></script>
+    <script>
+        window.onload = function() {
+            console.log(Sizzle('div > div.sizzle p span.red'));
+            console.log(document.querySelectorAll('div > div.sizzle p span.red'));
+        }
+
+    </script>
+</head>
+<body>
+<div id="text">
+    <p>
+        <input type="text" />
+    </p>
+    <div class="sizzle">
+        <input type="checkbox" name="readme" />
+        <p>
+            <span class="red">Sizzle</span>
+        </p>
+    </div>
+</div>
+</body>
+</html>
